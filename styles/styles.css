@@ -2,4 +2,34 @@ textarea {
     font-size: 1em;
     font-style: inherit;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-   }
+}
+.circle{
+    border-radius:50%;
+}
+.container {
+    margin: auto;
+    text-align: center; 
+    width: 940px;
+  }
+  .shape-section {
+    margin-top: 30px;
+    padding: 40px 0;
+  }
+  .diamond-shape {
+    background: gold;
+    height: 155px;
+    text-align: center;
+    transform:rotate(45deg);
+      width:155px;
+  }
+  .item-count {
+    color: #333;
+    display: table-cell;
+    height: 60px;
+    transform: rotate(-45deg);
+    vertical-align: middle;
+      width:60px;
+  }
+  .achievements{
+      padding-left: 550px
+  }

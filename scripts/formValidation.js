@@ -10,5 +10,36 @@ function addRow() {
     cell3.innerHTML = '<input type="text" class="form-control" placeholder="Percentage">';
     cell4.innerHTML = '<input type="text" class="form-control" placeholder="Year Of Passing">';
 }
+function validateFirstName(){
+    let name=document.getElementById("fname").value;
+    let div=document.getElementById("fname");
+    let pattern = /^[A-Z][a-z]{4,20}/
+    if(!pattern.test(name)){
+        div.style.border="1px solid red";
+    }
+}
+function validateLasttName(){
+    let name=document.getElementById("lname").value;
+    let div=document.getElementById("lname");
+    let pattern = /^[A-Z][a-z]{4,20}/
+    if(!pattern.test(name)){
+        div.style.border="1px solid red";
+    }
+}
+function validateParentName(){
+    let name=document.getElementById("pname").value;
+    let div=document.getElementById("pname");
+    let pattern = /^[A-Z][a-z]{4,40}/
+    if(!pattern.test(name)){
+        div.style.border="1px solid red";
+    }
+}
 
-
+function validateMobile(){
+    let name=document.getElementById("mobile").value;
+    let div=document.getElementById("mobile");
+    let pattern = /^[9 8 7 6][0-9]{9}/
+    if(!pattern.test(name)){
+        div.style.border="1px solid red";
+    }
+}
